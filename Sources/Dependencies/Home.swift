@@ -7,13 +7,13 @@
 
 import UIKit
 
-public protocol HomeModule {
+public protocol HomeModuleInterface {
     func homeScreen() -> UIViewController
 }
 
 extension Dependencies {
-    public var homeModule: HomeModule {
-        return resolve(HomeModule.self)!
+    public var homeModuleInterface: HomeModuleInterface {
+        return resolve(HomeModuleInterface.self)!
     }
 }
 

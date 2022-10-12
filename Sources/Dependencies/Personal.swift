@@ -7,13 +7,13 @@
 
 import UIKit
 
-public protocol PersonalModule {
+public protocol PersonalModuleInterface {
     func personalScreen() -> UIViewController
 }
 
 extension Dependencies {
-    public var personalModule: PersonalModule {
-        return resolve(PersonalModule.self)!
+    public var personalModuleInterface: PersonalModuleInterface {
+        return resolve(PersonalModuleInterface.self)!
     }
 }
 

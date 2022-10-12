@@ -7,12 +7,12 @@
 
 import UIKit
 
-public protocol FollowingModule {
+public protocol FollowingModuleInterface {
     func followingScreen() -> UIViewController
 }
 
 extension Dependencies {
-    public var followingModule: FollowingModule {
-        return resolve(FollowingModule.self)!
+    public var followingModuleInterface: FollowingModuleInterface {
+        return resolve(FollowingModuleInterface.self)!
     }
 }
